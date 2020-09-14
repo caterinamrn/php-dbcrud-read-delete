@@ -18,6 +18,7 @@
   $sql = "
           SELECT *
           FROM pagamenti
+          WHERE price > 600
       ";
 
   $result = $connection->query($sql);
