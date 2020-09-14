@@ -15,10 +15,15 @@
     echo "ok <br>";
   }
 
+  // $sql = "
+  //         DELETE
+  //         FROM pagamenti
+  //         WHERE id = 8
+  //     ";
   $sql = "
-          DELETE
-          FROM pagamenti
-          WHERE id = 8
+        DELETE
+        FROM pagamenti
+        WHERE pagante_id = 6 AND status = \"rejected\"
       ";
 
   $result = $connection->query($sql);
