@@ -36,4 +36,5 @@
     echo "error";
   }
 
+  $connection -> close();
  ?>
